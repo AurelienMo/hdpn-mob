@@ -5,11 +5,25 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android-run-dev": "ENVFILE=.env.dev react-native run-android",
+    "android-run-staging": "ENVFILE=.env.staging react-native run-android",
+    "android-run-prod": "ENVFILE=.env react-native run-android",
+    "iphone8-run-dev": "ENVFILE=.env.dev react-native run-ios --simulator=\"iPhone 8\"",
+    "iphone8-run-staging": "ENVFILE=.env.staging react-native run-ios --simulator=\"iPhone 8\"",
+    "iphone8-run-prod": "ENVFILE=.env react-native run-ios --simulator=\"iPhone 8\"",
+    "iphonex-run-dev": "ENVFILE=.env.dev react-native run-ios --simulator=\"iPhone X\"",
+    "iphonex-run-staging": "ENVFILE=.env.staging react-native run-ios --simulator=\"iPhone X\"",
+    "iphonex-run-prod": "ENVFILE=.env react-native run-ios --simulator=\"iPhone X\"="
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.60.5",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-screens": "^1.0.0-alpha.23",
+    "react-navigation": "^4.0.5",
+    "react-navigation-tabs": "^2.5.4"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
